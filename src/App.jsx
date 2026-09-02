@@ -13,7 +13,8 @@ import Farmers from './screens/Farmers';
 import './styles/theme.css';
 
 export default function App() {
-  const [activeScreen, setActiveScreen] = useState('dashboard');
+  // Corrected state declaration
+  const [activeScreen, setActiveScreen] = useState('login');
 
   if (activeScreen === 'login') {
     return <Login onLoginSuccess={() => setActiveScreen('dashboard')} />;

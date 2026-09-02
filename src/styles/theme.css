@@ -1,0 +1,216 @@
+/* --- Global Theme & Variables --- */
+:root {
+  --primary-green: #1B4D3E;
+  --accent-orange: #F39C12;
+  --status-red: #E74C3C;
+  --status-green: #2ECC71;
+  --bg-color: #F4F6F5;
+  --card-bg: #FFFFFF;
+  --text-dark: #2C3E50;
+  --border-color: #DCDDE1;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+}
+
+/* --- Login Screen Styling --- */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-card h2 {
+  color: var(--primary-green);
+  margin-bottom: 5px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.input-group input, .input-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.login-footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-footer a {
+  color: var(--primary-green);
+  text-decoration: none;
+}
+
+/* --- Dashboard Styling --- */
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.date-badge {
+  font-size: 13px;
+  color: #7F8C8D;
+  background: var(--bg-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #7F8C8D;
+}
+
+.card .amount {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.card .amount.receivable { color: var(--status-green); }
+.card .amount.payable { color: var(--status-red); }
+
+.quick-actions-bar {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.q-btn {
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* --- Form & Auto-Calc Styling --- */
+.form-container {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row .input-group {
+  flex: 1;
+}
+
+.auto-calc {
+  background-color: #E8F8F5 !important;
+  font-weight: bold;
+  color: var(--primary-green);
+}
+
+.action-footer {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn-save {
+  flex: 1;
+  background-color: var(--status-green);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-share {
+  flex: 1;
+  background-color: #2980B9;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}

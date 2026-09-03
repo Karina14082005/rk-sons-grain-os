@@ -23,8 +23,8 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not major dead",
-      "not prevalent other"
+      "not dead",
+      "not op_mini all"
     ],
     "development": [
       "last 1 chrome version",
